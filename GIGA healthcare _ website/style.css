@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 250, 250);
+    font-family: "Roboto Mono", monospace;  
+    background: url(circle.png) no-repeat;
+}
+.navbar navbar-expand-md bg-dark navbar-dark {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+  }
+  .custom-user-icon {
+    color: #3498db; /* Change the color to your desired color */
+    font-size: 24px; /* Change the font size to your desired size */
+  }  
+.navbar {
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:honeydew;
+    color:black
+}
+.navbar-brand img{
+    max-width: 40px;
+    max-height: 40px;
+}
+element.style {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    left: 84px;
+    top: 772px;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+}
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffa500; /* Change to your desired hover color */
+}
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Adjust as needed */
+    left: 0;
+    width: 0%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ffa500; /* Color of the underline */
+    transition: width 0.3s ease; /* Transition for the underline width */
+}
+.nav-links li a:hover::after {
+    background-color: #ffa500; /* Color of the underline on hover */
+}
+
+/* Active link style when clicked */
+.nav-links li a.active {
+    font-weight: bold; /* Example: Make the text bold */
+    background-color: #ffa500;
+    
+}
+/* Active link style when clicked */
+.nav-links li a.active {
+    font-weight: bold; /* Example: Make the text bold */
+}
+
+
+.container {
+    display: flex;
+    position: relative; /* Needed for absolute positioning */
+}
+
+.text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 40px;
+    color: #060606;
+
+}
+
+.images {
+    position: relative; /* Needed for absolute positioning */
+}
+
+#img1 {
+    padding-top: 60px;
+    padding-left: 50px;
+    max-width: 800px; /* Reduce the width */
+    max-height: 800px; /* Reduce the height */
+}
+
+
+h1{
+    padding-top: 110px;
+    padding-left: 10px;
+}
+#poshana {
+    display: inline-block;
+    overflow: hidden;
+    color:#ffa500;
+    border-right: 2px solid orange; /* Change to your desired border color */
+    animation: typing 3s steps(5, end) infinite; /* Adjust the steps to match the number of letters */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.text .btn-box{
+    display:flex;
+    justify-content: space-between;
+    width: 445px;
+    height:50px;
+    float: left;
+
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    margin: 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background:#FF9800;
+    border:1px #FF9800 solid;
+     border-radius: 8px;
+    font-size: 19px;
+    color: #081629;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color:orange;
+}
+
+.about {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 0px;
+}
+
+.atext {
+    text-align: left; 
+    margin-bottom: -60px; 
+}
+
+.atext h1 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 800; 
+    font-style: normal; 
+    font-size: 130px;
+    color: #F7B787;
+    padding-left: 10px;
+}
+
+.img {
+    padding-left: 20px;
+    max-width: 800px; /* Reduce the width */
+    max-height: 400px;
+}
+h2{
+    padding-top: 300px;
+    padding-left: 50px;
+    
+}
+p{
+    color: #344955;
+    padding-top: 10px;
+    padding-left: 50px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+
+.atext h3 {
+    font-family: "Roboto Mono", monospace;
+    max-width: 600px;
+    padding-left: 20px;
+    font-style: normal; /* Normal style */
+    top:-50px;
+    font-weight: bold;
+    font-size: 30px;
+    color:black;
+}
+.atext p{
+    padding-bottom: 90px;
+    max-width: 600px;
+}
+.left{
+    padding-top: 240px;
+}
+#id2{
+    padding-top: 40px;
+}
+.space {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+   background-color: #F7DED0;
+    max-height: 400px; /* Adjust the height as needed */
+  }
+.space h2{
+    padding: 150px;
+    top:0px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.space span{
+    color:#7469B6;
+    
+
+}
+.horizontal-line {
+    border-top: 1px solid orange; /* Change color and thickness as needed */
+    /* Adjust margin as needed */
+}
+.dev::before{
+    opacity: 0.2;
+}
+.dev{
+    max-height: 900px;
+    background-color:whitesmoke;
+    background: url(final.png)no-repeat;
+    background-size: cover;
+
+}
+.dev h2{
+    font-size: 80px;
+    margin: 0 30px 0 50px;
+}
+
+.glass .btn-box a{
+    padding:10px;
+    margin: 20px 50px 10px 100px;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .bg-image {
+    width: 1550px;
+    height: 350px;
+    opacity: 0.3;
+    position: relative;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .overlay-text {
+    top: 400px;
+    font-size: 5rem; /* Adjust font size as needed */
+    color: #000000; /* Change text color to make it visible on the image */
+  }
+  
+  .small-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+.footer {
+    padding-top: 180px;
+    text-align: center;
+}   
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.footer {
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .footer__container {
+    display: flex; /* Arrange elements horizontally */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Align elements vertically */
+    max-width: 1024px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .footer__logo {
+    max-width: 550px; /* Set a fixed width for the logo section */
+  }
+  
+  .footer__logo img {
+    max-width: 100px; /* Scale the logo image to fit the container */
+  }
+  .footer__nav {
+    flex: 1; /* Allow the navigation to occupy remaining space */
+  }
+  
+  .footer__nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footer__nav li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 15px; /* Add spacing between list items */
+  }
+  
+  .footer__nav a {
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 14px; /* Font size */
+  }
+  
+  .footer__nav a:hover {
+    color: #000; /* Change text color on hover */
+  }
+  
+  
+  .social-heading {
+    /* Your desired styles for the heading */
+    top: -70px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* Add some space between heading and icons */
+    text-decoration: underline;
+}
+  
+  
+  .footer__social a {
+    margin: 0 5px; /* Add spacing between social icons */
+    color: #333; /* Text color */
+  }
+  
+  .footer__social a:hover {
+    color: #007bff; /* Change color on hover (blue) */
+  }
+  
+  .footer__copyright {
+    background-color: #e2e2e2; /* Slightly darker background */
+    padding: 10px 0; /* Top and bottom padding */
+    text-align: center; /* Center copyright text */
+  }
+  
+  .footer__copyright p {
+    color: #666; /* Copyright text color */
+    font-size: 15px; /* Font size */
+    margin: 0; /* Remove default margin */
+  }
+  
